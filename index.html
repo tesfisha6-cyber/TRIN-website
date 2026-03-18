@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIN | Tigray Resilience & Innovation Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="container navbar-flex">
+            <a href="/" class="logo" aria-label="TRIN Home">TRIN</a>
+            
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-nav">
+                <ul class="nav-links">
+                    <li><a href="#work">Our Work</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Partner With Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Advancing Tigray’s Recovery Through Innovation.</h1>
+                    <p>We bridge the gap between global resources and community-led development to build a resilient, sustainable future.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Partner For Impact</a>
+                        <a href="#work" class="btn btn-secondary">Explore Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="features">
+            <div class="container">
+                <h2 class="section-title">Our Strategic Pillars</h2>
+                
+                
+                
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <span class="icon" role="img" aria-label="Data Analytics Icon">📊</span>
+                        <h3>Evidence-Based Work</h3>
+                        <p>Every intervention is backed by rigorous data and local research to ensure maximum long-term impact.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon" role="img" aria-label="Global Connectivity Icon">🌍</span>
+                        <h3>Local Integration</h3>
+                        <p>Deeply rooted in Tigray, we ensure programs are culturally aligned and community-owned.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon" role="img" aria-label="Shield of Transparency Icon">🛡️</span>
+                        <h3>Radical Transparency</h3>
+                        <p>We utilize modern oversight structures to provide partners with real-time clarity.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // 4. INTERACTIVITY: Simple script to toggle the mobile menu
+        const navToggle = document.querySelector('.menu-toggle');
+        const primaryNav = document.querySelector('#primary-nav');
+
+        navToggle.addEventListener('click', () => {
+            const isOpened = navToggle.getAttribute('aria-expanded') === "true";
+            navToggle.setAttribute('aria-expanded', !isOpened);
+            primaryNav.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
